@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HeyrronPaint</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <span class="pg-name">HeyrronPaint WebApp</span>
+            <div class="tools-container">
+                <div class="brush-settings">
+                    <input type="button" class="brush-button" id="brush-button" value="Brush" onclick="setBrushActive()">
+                    <span class="brush-size">Brush size</span>
+                    <input type="range" id="brush-size" min="1" max="50" value="10" onchange="setBrushSize()">
+                </div>
+                <div class="eraser-settings">
+                    <input type="button" class="erase-button" id="erase-button" value="Erase" onclick="setEraserActive()">
+                    <span class="eraser-size">Eraser size</span>
+                    <input type="range" id="eraser-size" min="1" max="50" value="10" onchange="setEraserSize()">
+                </div>
+                <div class="color-settings">
+                    <input type="text" class="brush-color-select-box" id="brush-color-select-box" placeholder="Brush color" onkeypress="if(event.key == 'Enter') setBrushColor()">
+                    <span class="brush-color">Select here</span>
+                    <input type="color" class="color-picker" id="brush-color-picker" value="#000000" onchange="setBrushColor()">
+                    <input type="text" class="fill-panel-color-box" id="fill-panel-color" placeholder="Panel background color" onkeypress="if(event.key == 'Enter') setPanelColor()">
+                    <span class="panel-color">Select here</span>
+                    <input type="color" class="color-picker" id="panel-color-picker" value="#ffffff" onchange="setPanelColor()">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <canvas class="drawing-panel" id="drawing-panel" width="1300" height="400" onmousedown="activateDraw()" onmousemove="draw()" onmouseup="deactivateDraw()">
+            </canvas>
+        </main>
+
+        <footer class="remaining-controls">
+            <div class="drawing-panel-settings">
+                <input type="text" placeholder="panel-width(current = 1300)" class="panel-width" id="panel-width" onkeypress="if(event.key == 'Enter') setPanelWidth()">
+                <input type="text" placeholder="panel-height(current = 400)" class="panel-height" id="panel-height" onkeypress="if(event.key == 'Enter') setPanelHeight()">
+            </div>
+
+            <input type="button" class="save-image-button" id="save-image-button" value="Save" onclick="saveImage()">
+            <input type="button"  class="save-image-button" value="Clear All" onclick="clearAll()">
+            <div class="shapes-settings">
+
+            </div> 
+        </footer>
+
+        <script src="node.js"></script>
+    </body>
+</html>

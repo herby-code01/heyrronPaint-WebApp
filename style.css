@@ -1,0 +1,147 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: lightblue;
+    position: absolute;
+}
+
+/*------ Header ------*/
+.program-name, .pg-name {
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.9);
+    color: white;
+}
+
+.tools-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-left: 6px;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: outline-offset 0.2s;
+}
+.tools-container:focus,.tools-container:hover{
+    outline: 2px solid white;
+    outline-offset: 3px ;
+}
+
+.brush-settings, .eraser-settings, .color-settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid white;
+    height: 34px;
+    border-radius: 17px;
+    margin-left: 10px;
+}
+.color-settings{margin-right: 10px;}
+.brush-size, .eraser-size, .brush-color, .panel-color{
+    font-size: 14px;
+    font: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+    margin-right: 4px;
+}
+.erase-button, .brush-button, .brush-color-select-box, .fill-panel-color-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:4px;
+    width: max-content;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 26px;
+    border: none;
+    color: rgb(99, 99, 99);
+    background-color: white;
+    border-radius: 13px;
+    cursor: pointer;
+    transition:  outline-offset 0.15s, background-color 0.15s, color 0.15s;
+}
+.erase-button:focus, .erase-button:hover, .brush-button:focus, .brush-button:hover,
+.save-image-button:focus, .save-image-button:hover,
+.brush-color-select-box:focus, .brush-color-select-box:hover,
+.fill-panel-color-box:focus, .fill-panel-color-box:hover, .panel-width:focus, .panel-width:hover, 
+.panel-height:focus, .panel-height:hover{
+    outline: 1px solid white;
+    outline-offset: 2px;
+    background-color: rgb(99, 99, 99);
+    color:white;
+}
+.erase-button:active, .brush-button:active, .save-image-button:active, .brush-color-select-box:active, .fill-panel-color-box:active,
+.panel-height:active, .panel-width:active{
+    background-color: white;
+    color:  rgb(99,99,99);
+    outline-offset: 1px;
+}
+.color-picker{
+    margin-right: 4px;
+    border: none;
+    height: 26px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/*------ Drawing Panel ------*/
+
+.drawing-panel{
+    border: 2px solid rgba(99,99,99,0.6);
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: white;
+}
+
+
+/*------ footer ------*/
+
+.remaining-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    padding-left: 40px;
+    padding-right:40px;
+    height: 40px;
+    margin-left: 6px;
+    margin-top: 40px;
+    border: 2px solid white;
+    height:40px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: outline-offset 0.2s;
+}
+.remaining-controls:focus,.remaining-controls:hover{
+    outline: 2px solid white;
+    outline-offset: 3px ;
+}
+
+.panel-height, .panel-width, .save-image-button{
+    margin-right: 4px;
+    width: max-content;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 26px;
+    border: none;
+    color: rgb(99, 99, 99);
+    background-color: white;
+    border-radius: 13px;
+    cursor: pointer;
+    transition:  outline-offset 0.15s, background-color 0.15s, color 0.15s;
+}
+.save-image-button{
+    margin-left:5px;
+}
