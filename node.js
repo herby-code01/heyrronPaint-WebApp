@@ -47,13 +47,14 @@ function setPanelColor(){
     if(panel_color_op1 && panel_color_op1 !==""){
         paintcanv.style.backgroundColor = 'white';
         panel_bg_color = panel_color_op1;
-    } else if(panel_color_op2 && panel_color_op2 !=="#ffffff" || panel_color_op2 !== String(panel_color_op1)){
+    } else if(panel_color_op2 && panel_color_op2 !=="#ffffff"){
         paintcanv.style.backgroundColor = 'white';
         panel_bg_color = panel_color_op2;
     } else{
         panel_bg_color = 'white';
     }
 
+    document.getElementById("fill-panel-color").value = "";
     paintcanv.style.backgroundColor = panel_bg_color;
     return panel_bg_color;
 }
