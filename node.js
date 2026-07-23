@@ -47,7 +47,7 @@ function setPanelColor(){
     if(panel_color_op1 && panel_color_op1 !==""){
         paintcanv.style.backgroundColor = 'white';
         panel_bg_color = panel_color_op1;
-    } else if(panel_color_op2 && panel_color_op2 !=="#ffffff" || panel_bg_color == panel_color_op1){
+    } else if(panel_color_op2 && panel_color_op2 !=="#ffffff" || panel_color_op2 !== panel_bg_color){
         paintcanv.style.backgroundColor = 'white';
         panel_bg_color = panel_color_op2;
     } else{
