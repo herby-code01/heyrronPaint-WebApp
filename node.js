@@ -44,7 +44,7 @@ function setPanelColor(){
     var panel_color_op1 = document.getElementById("fill-panel-color").value;
     var panel_color_op2 = document.getElementById("panel-color-picker").value;
 
-    if(panel_color_op1.trim() && panel_color_op1 !=="" || panel_color_op1){
+    if(panel_color_op1.trim() && panel_color_op1 !==""){
         panel_bg_color = panel_color_op1;
     } else if (panel_color_op2 && panel_color_op2 !=="#ffffff" || panel_color_op2){
         panel_bg_color = panel_color_op2;
