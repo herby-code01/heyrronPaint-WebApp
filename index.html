@@ -37,8 +37,8 @@
 
         <footer class="remaining-controls">
             <div class="drawing-panel-settings">
-                <input type="text" placeholder="panel-width(current = 1300)" class="panel-width" id="panel-width" onkeypress="if(event.key == 'Enter') setPanelWidth()">
-                <input type="text" placeholder="panel-height(current = 400)" class="panel-height" id="panel-height" onkeypress="if(event.key == 'Enter') setPanelHeight()">
+                <input type="text" placeholder="panel-width(current = 1300)" class="panel-width" id="panel-width" onkeydown="if(event.key == 'Enter') setPanelWidth()">
+                <input type="text" placeholder="panel-height(current = 400)" class="panel-height" id="panel-height" onkeydown="if(event.key == 'Enter') setPanelHeight()">
             </div>
 
             <input type="button" class="save-image-button" id="save-image-button" value="Save" onclick="saveImage()">
