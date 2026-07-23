@@ -33,7 +33,7 @@ function setBrushColor(){
     if(brush_color_op1.trim() && brush_color_op1 !==""){
         br_color = brush_color_op1;
     } else if(brush_color_op2 && brush_color_op2 !==""){
-        br_color="";
+        br_color_op1="";
         br_color = brush_color_op2;
     } else{
         br_color = 'black';
