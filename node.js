@@ -33,6 +33,7 @@ function setBrushColor(){
     if(brush_color_op1.trim() && brush_color_op1 !==""){
         br_color = brush_color_op1;
     } else if(brush_color_op2 && brush_color_op2 !==""){
+        br_color="";
         br_color = brush_color_op2;
     } else{
         br_color = 'black';
@@ -118,10 +119,10 @@ function saveImage(){
     var exportCanvas = document.createElement('canvas');
     exportCanvas.width = paintcanv.width;
     exportCanvas.height = paintcanv.height;
-    var expoCanv = exportCanvas.getContext('2d');
+    var expoCtxt = exportCanvas.getContext('2d');
 
-    expoCanv.fillStyle = panel_bg_color;
-    expoCanv.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
+    expoCtxt.fillStyle = panel_bg_color;
+    expoCtxt.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
 
     expoCanv.drawImage(paintcanv, 0, 0);
 
