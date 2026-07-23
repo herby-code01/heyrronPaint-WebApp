@@ -50,11 +50,12 @@ function setPanelColor(){
         panel_bg_color = panel_color_op1;
     } else if(panel_color_op2 && panel_color_op2 !=="#ffffff"){
         paintcanv.style.backgroundColor = 'white';
-        panel_color_op1 = "";
         panel_bg_color = panel_color_op2;
     } else{
         panel_bg_color = 'white';
     }
+    panel_color_op1 = "";
+    panel_color_op2 = "";
 
     paintcanv.style.backgroundColor = panel_bg_color;
     return panel_bg_color;
