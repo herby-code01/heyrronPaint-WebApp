@@ -53,6 +53,7 @@ function setPanelColor(){
     } else{
         panel_bg_color = 'white';
     }
+    return panel_bg_color;
 }
 
 function regularDraw(x,y){
