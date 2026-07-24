@@ -33,11 +33,11 @@ function setBrushColor(){
     if(brush_color_op1.trim() && brush_color_op1 !==""){
         br_color = brush_color_op1;
     } else if(brush_color_op2 && brush_color_op2 !==""){
-        br_color_op1="";
         br_color = brush_color_op2;
     } else{
         br_color = 'black';
     }
+    document.getElementById("brush-color-select-box").value = "";
     return br_color;
 }
 
@@ -54,10 +54,8 @@ function setPanelColor(){
     } else{
         panel_bg_color = 'white';
     }
-    panel_color_op1 = "";
-    panel_color_op2 = "";
-
     paintcanv.style.backgroundColor = panel_bg_color;
+    document.getElementById("fill-panel-color").value ="";
     return panel_bg_color;
 }
 
