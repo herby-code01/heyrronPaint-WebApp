@@ -123,7 +123,7 @@ function saveImage(){
     expoCtxt.fillStyle = panel_bg_color;
     expoCtxt.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
 
-    expoCtxt.drawImage(paintcanv, 0, 0);
+    exportCanvas.drawImage(paintcanv, 0, 0);
 
     var dataURL = exportCanvas.toDataURL('image/png');
     var a = document.createElement('a');
